@@ -37,7 +37,7 @@
 <!ELEMENT MERK                  (#PCDATA)>
 
 <!-- routebeschrijving bevat de volgende informatie: #PCDATA-->
-<!ELEMENT routebeschrijving (#PCDATA)>
+<!ELEMENT ROUTEBESCHRIJVING (#PCDATA)>
 
 <!-- medewerkers bevat de volgende elementen: medewerker_naam, medewerker_foto en medewerker_functie -->
 <!ELEMENT MEDEWERKERS           (MEDEWERKER+)>
@@ -48,12 +48,12 @@
 
 <!-- Alle informatie t.b.v de werkplaatsen en onderhoud kan hier ingevoerd worden -->
 <!ELEMENT WERKPLAATSEN          (#PCDATA)>
-<!ATTLIST WERKP ONDERHOUD       (JA|NEE) #REQUIRED>
-<!ATTLIST WERKP APK             (JA|NEE) #REQUIRED>
-<!ATTLIST WERKP SCHADEHERSTEL   (JA|NEE) #REQUIRED>
-<!ATTLIST WERKP RUITENREPARATIE (JA|NEE) #REQUIRED>
-<!ATTLIST WERKP AIRCOSERVICE    (JA|NEE) #REQUIRED>
-<!ATTLIST WERKP BANDENSERVICE   (JA|NEE) #REQUIRED>
+<!ATTLIST WERKPLAATSEN ONDERHOUD       (JA|NEE) #REQUIRED>
+<!ATTLIST WERKPLAATSEN APK             (JA|NEE) #REQUIRED>
+<!ATTLIST WERKPLAATSEN SCHADEHERSTEL   (JA|NEE) #REQUIRED>
+<!ATTLIST WERKPLAATSEN RUITENREPARATIE (JA|NEE) #REQUIRED>
+<!ATTLIST WERKPLAATSEN AIRCOSERVICE    (JA|NEE) #REQUIRED>
+<!ATTLIST WERKPLAATSEN BANDENSERVICE   (JA|NEE) #REQUIRED>
 
 <!-- Hieronder bevinden zich de openingstijden van de verkoop en werkplaats -->
 <!ELEMENT OPENINGSTIJDEN (DAGEN)>
@@ -66,7 +66,7 @@
 
 <!-- Hier wordt de volledige beschrijving van de occasion weergegeven tevens ook de foto's. occasions bevat occasions_volledig -->
 <!ELEMENT TWEEDE_HANDSAUTOS     (OCCASION*)>
-<!ELEMENT OCCASION (OCCASION_VOLLEDIG)>
+<!ELEMENT OCCASION (OCCASION_FOTOS)>
 <!ATTLIST OCCASION KENTEKEN     CDATA #REQUIRED>
 <!ATTLIST OCCASION MERK         CDATA #REQUIRED>
 <!ATTLIST OCCASION TYPE         CDATA #REQUIRED>
