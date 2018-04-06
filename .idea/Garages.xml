@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- INF2A (Fekke Fekkes, Jimmy Habing, Justin Heidotting, Niels van Wijk, Kevin Hekman, Niels Stevens) -->
+<!-- Informatica Beheer -->
+<!-- versie 0.1 -->
+
 <!DOCTYPE garages SYSTEM "Garages.dtd">
 <GARAGES>
   <GARAGE>

@@ -1,6 +1,10 @@
+<!-- INF2A (Fekke Fekkes, Jimmy Habing, Justin Heidotting, Niels van Wijk, Kevin Hekman, Niels Stevens) -->
+<!-- Informatia Beheer -->
+<!-- versie 0.2 -->
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <!ELEMENT GARAGES (GARAGE+)>
-<!ELEMENT GARAGE  	(GARAGE_CONTACTGEGEVENS, GARAGE_OMSCHRIJVING?, GARAGE_FOTOS?, OPENINGSTIJDEN ,GARAGE_BOVAG, GARAGE_AUTOLENEN, GARAGE_AUTOHUREN, GARAGE_RDWERKEND, MEDEWERKERS, DEALER, WERKPLAATSEN?,
+<!ELEMENT GARAGE  	(GARAGE_CONTACTGEGEVENS, GARAGE_OMSCHRIJVING?, GARAGE_FOTOS+, OPENINGSTIJDEN ,GARAGE_BOVAG, GARAGE_AUTOLENEN, GARAGE_AUTOHUREN, GARAGE_RDWERKEND, MEDEWERKERS, DEALER, WERKPLAATSEN?,
 					TWEEDE_HANDSAUTOS?, FACILITEITEN, ROUTEBESCHRIJVING)>
 
 <!--Hier worden de contactgegevens van de garage weergegeven -->
@@ -17,37 +21,37 @@
 <!ELEMENT GARAGE_OMSCHRIJVING 	(#PCDATA)>
 
 <!-- foto's van de garage -->
-<!ELEMENT GARAGE_FOTOS			(GARAGE_FOTO*)>
+<!ELEMENT GARAGE_FOTOS			(GARAGE_FOTO+)>
 <!ELEMENT GARAGE_FOTO 			(#PCDATA)>
 
 <!-- Hier wordt duidelijk of de garage wel bovag gecertificeerd is of RDW erkend -->
-<!ELEMENT GARAGE_BOVAG          (#PCDATA)>
+<!ELEMENT GARAGE_BOVAG          (#PCDATA)> <!-- hoeft niet per sé, wat gooi je er in? aangesloten wel? dan wel weergeven, en anders niet -->
 <!ATTLIST GARAGE_BOVAG AANGESLOTEN (JA|NEE) #REQUIRED>
 <!ELEMENT GARAGE_RDWERKEND      (#PCDATA)>
 <!ATTLIST GARAGE_RDWERKEND ERKEND (JA|NEE) #REQUIRED>
 
 <!-- Wordt er een auto uitgeleend of wordt deze verhuurd -->
-<!ELEMENT GARAGE_AUTOLENEN      (#PCDATA)>
+<!ELEMENT GARAGE_AUTOLENEN      (#PCDATA)> <!-- hoeft niet per sé, wat gooi je er in? aangesloten wel? dan wel weergeven, en anders niet -->
 <!ATTLIST GARAGE_AUTOLENEN LENEN (JA|NEE) #REQUIRED>
 <!ELEMENT GARAGE_AUTOHUREN      (#PCDATA)>
 <!ATTLIST GARAGE_AUTOHUREN HUREN (JA|NEE) #REQUIRED>
 
-<!ELEMENT DEALER                (MERK*)>
+<!ELEMENT DEALER                (MERK+)> <!-- welke auto's kan je verkopen? -->
 <!ATTLIST DEALER VERKOOP (JA|NEE)>
 <!ELEMENT MERK                  (#PCDATA)>
 
 <!-- routebeschrijving bevat de volgende informatie: #PCDATA-->
-<!ELEMENT ROUTEBESCHRIJVING (#PCDATA)>
+<!ELEMENT ROUTEBESCHRIJVING (#PCDATA)> <!-- google maps, misschien een linkje -->
 
 <!-- medewerkers bevat de volgende elementen: medewerker_naam, medewerker_foto en medewerker_functie -->
 <!ELEMENT MEDEWERKERS           (MEDEWERKER+)>
-<!ELEMENT MEDEWERKER            (MEDEWERKER_NAAM, MEDEWERKER_FOTO, MEDEWERKER_FUNCTIE)>
+<!ELEMENT MEDEWERKER            (MEDEWERKER_NAAM, MEDEWERKER_FOTO, MEDEWERKER_FUNCTIE)> <!-- foto kan meer algemeen , afbakening van functie -->
 <!ELEMENT MEDEWERKER_NAAM       (#PCDATA)>
 <!ELEMENT MEDEWERKER_FOTO       (#PCDATA)>
 <!ELEMENT MEDEWERKER_FUNCTIE    (#PCDATA)>
 
 <!-- Alle informatie t.b.v de werkplaatsen en onderhoud kan hier ingevoerd worden -->
-<!ELEMENT WERKPLAATSEN          (#PCDATA)>
+<!ELEMENT WERKPLAATSEN          				(#PCDATA)> <!-- allemaal elementen 1 of 0 -->
 <!ATTLIST WERKPLAATSEN ONDERHOUD       (JA|NEE) #REQUIRED>
 <!ATTLIST WERKPLAATSEN APK             (JA|NEE) #REQUIRED>
 <!ATTLIST WERKPLAATSEN SCHADEHERSTEL   (JA|NEE) #REQUIRED>
@@ -65,22 +69,22 @@
 
 
 <!-- Hier wordt de volledige beschrijving van de occasion weergegeven tevens ook de foto's. occasions bevat occasions_volledig -->
-<!ELEMENT TWEEDE_HANDSAUTOS     (OCCASION*)>
+<!ELEMENT TWEEDE_HANDSAUTOS     (OCCASION*)> <!-- naam veranderen in occasions -->
 <!ELEMENT OCCASION (OCCASION_FOTOS)>
-<!ATTLIST OCCASION KENTEKEN     CDATA #REQUIRED>
-<!ATTLIST OCCASION MERK         CDATA #REQUIRED>
+<!ATTLIST OCCASION KENTEKEN     CDATA #REQUIRED> <!-- mag blijven -->
+<!ATTLIST OCCASION MERK         CDATA #REQUIRED> <!-- allemaal attributen -->
 <!ATTLIST OCCASION TYPE         CDATA #REQUIRED>
 <!ATTLIST OCCASION BOUWJAAR     CDATA #REQUIRED>
-<!ATTLIST OCCASION BRANDSTOF    (BENZINE|LPG|DIESEL) #REQUIRED>
+<!ATTLIST OCCASION BRANDSTOF    (BENZINE|LPG|DIESEL) #REQUIRED> <!-- deze mag -->
 <!ATTLIST OCCASION PRIJS        CDATA #REQUIRED>
 <!ATTLIST OCCASION PRIJS
                                 VALUTA CDATA "EURO">
 
-<!ELEMENT OCCASION_FOTOS        (OCCASION_FOTO+)>
+<!ELEMENT OCCASION_FOTOS        (OCCASION_FOTO+)> <!-- 1 foto -->
 <!ELEMENT OCCASION_FOTO        (#PCDATA)>
 
 <!-- faciliteiten kan de volgende elementen bevatten + de bijbehorende attributen -->
-<!ELEMENT FACILITEITEN          (POMP+, AUTOWAS?, GARAGE_WINKEL?)>
+<!ELEMENT FACILITEITEN          (POMP*, AUTOWAS*, GARAGE_WINKEL?)>
 <!ELEMENT POMP                  (#PCDATA)>
 <!ATTLIST POMP TYPE (BENZINE|DIESEL|LPG) #REQUIRED>
 
@@ -88,7 +92,8 @@
 <!ATTLIST AUTOWAS TYPE (BOX|WASSTRAAT) #REQUIRED>
 
 <!ELEMENT GARAGE_WINKEL          (#PCDATA)>
-<!ATTLIST GARAGE_WINKEL LEVENSMIDDELEN 	(JA|NEE) #REQUIRED>
+<!ATTLIST GARAGE_WINKEL LEVENSMIDDELEN 	(JA|NEE) #REQUIRED> <!-- allemaal elementen -->
+
 <!ATTLIST GARAGE_WINKEL ROOKWAAR			(JA|NEE) #REQUIRED>
 <!ATTLIST GARAGE_WINKEL TIJDSCHRIFTEN	(JA|NEE) #REQUIRED>
 <!ATTLIST GARAGE_WINKEL AUTO-ACCESSOIRES	(JA|NEE) #REQUIRED>
