@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="GARAGES">
+
+  </xs:element>
+</xs:schema>
