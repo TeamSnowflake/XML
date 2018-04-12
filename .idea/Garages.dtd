@@ -1,11 +1,11 @@
 <!-- INF2A (Fekke Fekkes, Jimmy Habing, Justin Heidotting, Niels van Wijk, Kevin Hekman, Niels Stevens) -->
 <!-- Informatia Beheer -->
-<!-- versie 0.2 -->
+<!-- versie 1.0 -->
 
 <?xml version="1.0" encoding="UTF-8" ?>
 <!ELEMENT GARAGES (GARAGE+)>
-<!ELEMENT GARAGE  	(ADRES,EMAIL,WEBSITE, OMSCHRIJVING?, FOTOS+, BOVAG_AANGESLOTEN, RDWERKEND_ERKEND, OPENINGSTIJDEN ,BOVAG, AUTOLENEN, AUTOHUREN, RDWERKEND, MEDEWERKERS, DEALER, WERKPLAATSEN?,
-					TWEEDE_HANDSAUTOS?, FACILITEITEN, ROUTEBESCHRIJVING)>
+<!ELEMENT GARAGE  	(ADRES,EMAIL,WEBSITE, OMSCHRIJVING?, FOTOS+, RDW_ERKEND?, OPENINGSTIJDEN ,BOVAG?, AUTOLENEN?, AUTOHUREN?, MEDEWERKERS, DEALER?, WERKPLAATSEN,
+					OCCASIONS?, FACILITEITEN?, ROUTEBESCHRIJVING)>
 
 <!--Hier worden de contactgegevens van de garage weergegeven -->
 <!ELEMENT ADRES (STRAAT, STRAATNR, POSTCODE, PROVINCIE)>
@@ -22,74 +22,75 @@
 
 <!-- foto's van de garage -->
 <!ELEMENT FOTOS			(FOTO+)>
-<!ELEMENT FOTO 			(#PCDATA)>
-
+<!ELEMENT FOTO 			(FOTO_LINK, FOTO_ALT)>
+<!ELEMENT FOTO_LINK     (#PCDATA)
+<!ELEMENT FOTO_ALT      (#PCDATA)
 <!-- Hier wordt duidelijk of de garage wel bovag gecertificeerd is of RDW erkend -->
-<!ELEMENT BOVAG_AANGESLOTEN () >
-<!ELEMENT RDWERKEND_ERKEND () >
+<!ELEMENT BOVAG          EMPTY>
+<!ELEMENT RDW_ERKEND     EMPTY>
 
 <!-- Wordt er een auto uitgeleend of wordt deze verhuurd -->
-<!ELEMENT AUTOLENEN      ()>
-<!ELEMENT AUTOHUREN      ()>
+<!ELEMENT AUTOLENEN      EMPTY>
+<!ELEMENT AUTOHUREN      EMPTY>
 
 
-<!ELEMENT DEALER                (MERK+)> <!-- welke auto's kan je verkopen? -->
-<!ELEMENT MERK                  (#PCDATA)>
+<!ELEMENT DEALER                (MERK*)>
+<!ELEMENT MERK                  (Bmw | Audi | Fiat | Renault | Tesla | Toyota )>
 
 <!-- routebeschrijving bevat de volgende informatie: #PCDATA-->
-<!ELEMENT ROUTEBESCHRIJVING (#PCDATA)> <!-- google maps, misschien een linkje -->
+<!ELEMENT ROUTEBESCHRIJVING (#PCDATA)>
 
 <!-- medewerkers bevat de volgende elementen: medewerker_naam, medewerker_foto en medewerker_functie -->
 <!ELEMENT MEDEWERKERS           (MEDEWERKER+)>
-<!ELEMENT MEDEWERKER            (MEDEWERKER_NAAM, MEDEWERKER_FOTO, MEDEWERKER_FUNCTIE)> <!-- foto kan meer algemeen , afbakening van functie -->
+<!ELEMENT MEDEWERKER            (MEDEWERKER_NAAM, FOTOS, MEDEWERKER_FUNCTIE)> <!-- foto kan meer algemeen , afbakening van functie -->
 <!ELEMENT MEDEWERKER_NAAM       (#PCDATA)>
-<!ELEMENT MEDEWERKER_FOTO       (#PCDATA)>
 <!ELEMENT MEDEWERKER_FUNCTIE    (#PCDATA)>
 
 <!-- Alle informatie t.b.v de werkplaatsen en onderhoud kan hier ingevoerd worden -->
-<!ELEMENT WERKPLAATSEN          				(#PCDATA)> <!-- allemaal elementen 1 of 0 -->
-<!ATTLIST WERKPLAATSEN ONDERHOUD       (JA|NEE) #REQUIRED>
-<!ATTLIST WERKPLAATSEN APK             (JA|NEE) #REQUIRED>
-<!ATTLIST WERKPLAATSEN SCHADEHERSTEL   (JA|NEE) #REQUIRED>
-<!ATTLIST WERKPLAATSEN RUITENREPARATIE (JA|NEE) #REQUIRED>
-<!ATTLIST WERKPLAATSEN AIRCOSERVICE    (JA|NEE) #REQUIRED>
-<!ATTLIST WERKPLAATSEN BANDENSERVICE   (JA|NEE) #REQUIRED>
+<!ELEMENT WERKPLAATSEN          				(ONDERHOUD?, APK?, SCHADEHERSTEL?, RUITENREPARATIE?, AIRCOSERVICE?, BANDENSERVICE?)>
+<!ELEMENT ONDERHOUD        EMPTY>
+<!ELEMENT APK              EMPTY>
+<!ELEMENT SCHADEHERSTEL    EMPTY>
+<!ELEMENT RUITENREPARATIE  EMPTY>
+<!ELEMENT AIRCOSERVICE     EMPTY>
+<!ELEMENT BANDENSERVICE    EMPTY>
 
-<!-- Hieronder bevinden zich de openingstijden van de verkoop en werkplaats -->
-<!ELEMENT OPENINGSTIJDEN (DAGEN)>
-<!ELEMENT DAGEN (DAG+)>
-<!ELEMENT DAG (#PCDATA)>
-<!ATTLIST DAG DAG (Maandag|Dinsdag|Woensdag|Donderdag|Vrijdag|Zaterdag|Zondag) #REQUIRED>
-<!ATTLIST DAG werkplaats CDATA #REQUIRED>
-<!ATTLIST DAG verkoop CDATA #REQUIRED>
+<!ELEMENT DAGEN (MAANDAG, DINSDAG, WOENSDAG, DONDERDAG, VRIJDAG, ZATERDAG ZONDAG)
+<!ELEMENT MAANDAG         (#PCDATA)
+<!ELEMENT DINSDAG         (#PCDATA)
+<!ELEMENT WOENSDAG        (#PCDATA)
+<!ELEMENT DONDERDAG       (#PCDATA)
+<!ELEMENT VRIJDAG         (#PCDATA)
+<!ELEMENT ZATERDAG        (#PCDATA)
+<!ELEMENT ZONDAG          (#PCDATA)
+
+
+<!-- Hieronder bevinDen zich de openingstijden van de verkoop en werkplaats -->
+<!ELEMENT OPENINGSTIJDEN (WERKPLAATS, VERKOOP)>
+<!ELEMENT WERKPLAATS (DAGEN)
+<!ELEMENT VERKOOP (DAGEN)
 
 
 <!-- Hier wordt de volledige beschrijving van de occasion weergegeven tevens ook de foto's. occasions bevat occasions_volledig -->
-<!ELEMENT TWEEDE_HANDSAUTOS     (OCCASION*)> <!-- naam veranderen in occasions -->
-<!ELEMENT OCCASION (OCCASION_FOTOS)>
-<!ATTLIST OCCASION KENTEKEN     CDATA #REQUIRED> <!-- mag blijven -->
-<!ATTLIST OCCASION MERK         CDATA #REQUIRED> <!-- allemaal attributen -->
-<!ATTLIST OCCASION TYPE         CDATA #REQUIRED>
-<!ATTLIST OCCASION BOUWJAAR     CDATA #REQUIRED>
-<!ATTLIST OCCASION BRANDSTOF    (BENZINE|LPG|DIESEL) #REQUIRED> <!-- deze mag -->
-<!ATTLIST OCCASION PRIJS        CDATA #REQUIRED>
+<!ELEMENT OCCASIONS    (OCCASION*)>
+<!ELEMENT OCCASION (KENTEKEN, OCCASION_MERK, TYPE, BOUWJAAR, PRIJS)>
+<!ELEMENT KENTEKEN      (#PCDATA)>
+<!ELEMENT OCCASION_MERK (#PCDATA)>
+<!ELEMENT TYPE          (#PCDATA))>
+<!ELEMENT BOUWJAAR      (#PCDATA)>
+<!ATTLIST OCCASION BRANDSTOF    (BENZINE|LPG|DIESEL) #REQUIRED> 
+<!ELEMENT PRIJS         (#PCDATA)>
 <!ATTLIST OCCASION PRIJS
                                 VALUTA CDATA "EURO">
 
-<!ELEMENT OCCASION_FOTOS        (OCCASION_FOTO+)> <!-- 1 foto -->
-<!ELEMENT OCCASION_FOTO        (#PCDATA)>
-
 <!-- faciliteiten kan de volgende elementen bevatten + de bijbehorende attributen -->
 <!ELEMENT FACILITEITEN          (POMP*, AUTOWAS*, WINKEL?)>
-<!ELEMENT POMP                  (#PCDATA)>
-<!ATTLIST POMP TYPE (BENZINE|DIESEL|LPG) #REQUIRED>
+<!ELEMENT POMP                  (Benzine | Diesel | Gas)>
+<!ELEMENT AUTOWAS               (Box | Wasstraat)>
 
-<!ELEMENT AUTOWAS               (#PCDATA)>
-<!ATTLIST AUTOWAS TYPE (BOX|WASSTRAAT) #REQUIRED>
 
-<!ELEMENT WINKEL          (#PCDATA)>
-<!ATTLIST WINKEL LEVENSMIDDELEN 	(JA|NEE) #REQUIRED> <!-- allemaal elementen -->
-
-<!ATTLIST WINKEL ROOKWAAR			(JA|NEE) #REQUIRED>
-<!ATTLIST WINKEL TIJDSCHRIFTEN	(JA|NEE) #REQUIRED>
-<!ATTLIST WINKEL AUTO-ACCESSOIRES	(JA|NEE) #REQUIRED>
+<!ELEMENT WINKEL          (LEVENSMIDDELEN?, ROOKWAAR?, TIJDSCHRIFTEN?, AUTO-ACCESSOIRES?)>
+<!ELEMENT LEVENSMIDDELEN 	EMPTY>
+<!ELEMENT ROOKWAAR			EMPTY>
+<!ELEMENT TIJDSCHRIFTEN	    EMPTY>
+<!ELEMENT AUTO-ACCESSOIRES	EMPTY)>
