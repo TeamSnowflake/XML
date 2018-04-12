@@ -4,7 +4,7 @@
 <!-- Informatica Beheer -->
 <!-- versie 1.0 -->
 
-<!DOCTYPE garages SYSTEM "Garages.dtd">
+<!DOCTYPE GARAGES SYSTEM "Garages.dtd">
 <GARAGES>
   <GARAGE>
     <ADRES>
@@ -15,6 +15,7 @@
     </ADRES>
 
     <EMAIL>garage@mail.nl</EMAIL>
+    <WEBSITE>WOEFJ</WEBSITE>
     <OMSCHRIJVING>HELE MOOIE GARAGE</OMSCHRIJVING>
     <ROUTEBESCHRIJVING>LINKS LINKS RECHTS</ROUTEBESCHRIJVING>
 
@@ -50,9 +51,8 @@
       </VERKOOP>
     </OPENINGSTIJDEN>
 
-    <BOVAG></BOVAG>
-    <RDW_ERKEND></RDW_ERKEND>
-    <AUTOLENEN> </AUTOLENEN>
+    <BOVAG />
+    <AUTOLENEN />
     <AUTOHUREN></AUTOHUREN>
 
     <MEDEWERKERS>
@@ -68,8 +68,8 @@
       </MEDEWERKER>
     </MEDEWERKERS>
 
-    <DEALER>
-      <MERK>DIKKE BMW</MERK>
+    <DEALER MERKEN="MERCEDES, AUDI, BMW, TESLA, TOYOTA, FIAT, FERRARI">
+      <MERK>BMW</MERK>
     </DEALER>
 
     <WERKPLAATSEN>
@@ -87,20 +87,24 @@
         <OCCASION_MERK>BWM</OCCASION_MERK>
         <TYPE>hatchback</TYPE>
         <BOUWJAAR>1999</BOUWJAAR>
-        <PRIJS>2000</PRIJS>
+        <PRIJS VALUTA="EURO">2000</PRIJS>
       </OCCASION>
     </OCCASIONS>
 
 
     <FACILITEITEN>
+      <POMPEN SOORT="BEZINE, DIESEL, GAS">
       <POMP>Benzine</POMP>
-      <POMP>Diesel</POMP>
-      <AUTOWAS>Box</AUTOWAS>
+      <POMP></POMP>
+      </POMPEN>
+      <WASSEN SOORT="BOX, WASSTRAAT">
+        <AUTOWAS>Box</AUTOWAS>
+      </WASSEN>
       <WINKEL>
-        <AUTO-ACCESSOIRES></AUTO-ACCESSOIRES>
-        <LEVENSMIDDELEN></LEVENSMIDDELEN>
-        <ROOKWAAR></ROOKWAAR>
-        <TIJDSCHRIFTEN></TIJDSCHRIFTEN>
+        <LEVENSMIDDELEN/>
+        <ROOKWAAR />
+        <TIJDSCHRIFTEN/>
+        <AUTO-ACCESSOIRES/>
       </WINKEL>
     </FACILITEITEN>
   </GARAGE>
