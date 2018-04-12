@@ -18,8 +18,28 @@
         </xs:element>
       </xs:sequence>
     </xs:complexType>
-
   </xs:element>
+
+  <xs:simpleType name="TIJDSTIP">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-2][0-9]:[0-5][0-9]-[0-2][0-9]:[0-5][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="DAGEN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MAANDAG" type="TIJDSTIP" minOccurs="1" maxOccurs="1"></xs:element>
+        <xs:element name="DINSDAG" type="TIJDSTIP" minOccurs="1" maxOccurs="1"></xs:element>
+        <xs:element name="WOENSDAG" type="TIJDSTIP" minOccurs="1" maxOccurs="1"></xs:element>
+        <xs:element name="DONDERDAG" type="TIJDSTIP" minOccurs="1" maxOccurs="1"></xs:element>
+        <xs:element name="VRIJDAG" type="TIJDSTIP" minOccurs="1" maxOccurs="1"></xs:element>
+        <xs:element name="ZATERDAG" type="TIJDSTIP" minOccurs="1" maxOccurs="1"></xs:element>
+        <xs:element name="ZONDAG" type="TIJDSTIP" minOccurs="1" maxOccurs="1"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
   <xs:element name="GARAGES">
     <xs:complexType>
       <xs:sequence>
@@ -74,38 +94,14 @@
                     <xs:element name="WERKPLAATS">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="DAGEN">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="xs:string" name="MAANDAG"/>
-                                <xs:element type="xs:string" name="DINSDAG"/>
-                                <xs:element type="xs:string" name="WOENSDAG"/>
-                                <xs:element type="xs:string" name="DONDERDAG"/>
-                                <xs:element type="xs:string" name="VRIJDAG"/>
-                                <xs:element type="xs:string" name="ZATERDAG"/>
-                                <xs:element type="xs:string" name="ZONDAG"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
+                          <xs:element ref="DAGEN"></xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
                     <xs:element name="VERKOOP">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="DAGEN">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="xs:string" name="MAANDAG"/>
-                                <xs:element type="xs:string" name="DINSDAG"/>
-                                <xs:element type="xs:string" name="WOENSDAG"/>
-                                <xs:element type="xs:string" name="DONDERDAG"/>
-                                <xs:element type="xs:string" name="VRIJDAG"/>
-                                <xs:element type="xs:string" name="ZATERDAG"/>
-                                <xs:element type="xs:string" name="ZONDAG"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
+                          <xs:element ref="DAGEN"></xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
@@ -133,7 +129,13 @@
               <xs:element name="DEALER">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type="xs:string" name="MERK"/>
+                    <xs:element name="MERK">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="Mercedes|Audi|BMW|Tesla|Fiat|Ferrari"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                   </xs:sequence>
                   <xs:attribute type="xs:string" name="MERKEN"/>
                 </xs:complexType>
@@ -156,10 +158,22 @@
                     <xs:element name="OCCASION">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type="xs:string" name="KENTEKEN"/>
+                          <xs:element name="KENTEKEN">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:pattern value="\d{2}-\w{2}-\w{2}"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
                           <xs:element type="xs:string" name="OCCASION_MERK"/>
                           <xs:element type="xs:string" name="TYPE"/>
-                          <xs:element type="xs:short" name="BOUWJAAR"/>
+                          <xs:element name="BOUWJAAR">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:short">
+                                <xs:pattern value="[1-2][9|0][0-9][0-9]"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
                           <xs:element name="PRIJS">
                             <xs:complexType>
                               <xs:simpleContent>
@@ -182,7 +196,13 @@
                     <xs:element name="POMPEN">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type="xs:string" name="POMP" maxOccurs="unbounded" minOccurs="0"/>
+                          <xs:element name="POMP" minOccurs="0" maxOccurs="unbounded">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:pattern value="Benzine|Diesel|Gas"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
                         </xs:sequence>
                         <xs:attribute type="xs:string" name="SOORT"/>
                       </xs:complexType>
@@ -190,7 +210,13 @@
                     <xs:element name="WASSEN">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type="xs:string" name="AUTOWAS"/>
+                          <xs:element name="AUTOWAS">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:pattern value="Box|Wasstraat"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                          </xs:element>
                         </xs:sequence>
                         <xs:attribute type="xs:string" name="SOORT"/>
                       </xs:complexType>

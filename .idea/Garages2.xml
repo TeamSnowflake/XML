@@ -29,24 +29,24 @@
     <OPENINGSTIJDEN>
       <WERKPLAATS>
         <DAGEN>
-          <MAANDAG>10:00 - 13:00</MAANDAG>
-          <DINSDAG>10:00 - 15:00</DINSDAG>
-          <WOENSDAG>10:00 - 15:00</WOENSDAG>
-          <DONDERDAG>10:00 - 15:00</DONDERDAG>
-          <VRIJDAG>10:00 - 16:00</VRIJDAG>
-          <ZATERDAG>10:00 - 15:00</ZATERDAG>
-          <ZONDAG>10:00 - 15:00</ZONDAG>
+          <MAANDAG>10:00-13:00</MAANDAG>
+          <DINSDAG>10:00-15:00</DINSDAG>
+          <WOENSDAG>10:00-15:00</WOENSDAG>
+          <DONDERDAG>10:00-15:00</DONDERDAG>
+          <VRIJDAG>10:00-16:00</VRIJDAG>
+          <ZATERDAG>10:00-15:00</ZATERDAG>
+          <ZONDAG>10:00-15:00</ZONDAG>
         </DAGEN>
       </WERKPLAATS>
       <VERKOOP>
         <DAGEN>
-          <MAANDAG>10:00 - 12:00</MAANDAG>
-          <DINSDAG>10:00 - 16:00</DINSDAG>
-          <WOENSDAG>10:00 - 18:00</WOENSDAG>
-          <DONDERDAG>10:00 - 18:00</DONDERDAG>
-          <VRIJDAG>10:00 - 18:00</VRIJDAG>
-          <ZATERDAG>10:00 - 18:00</ZATERDAG>
-          <ZONDAG>10:00 - 18:00</ZONDAG>
+          <MAANDAG>10:00-12:00</MAANDAG>
+          <DINSDAG>10:00-16:00</DINSDAG>
+          <WOENSDAG>10:00-18:00</WOENSDAG>
+          <DONDERDAG>10:00-18:00</DONDERDAG>
+          <VRIJDAG>10:00-18:00</VRIJDAG>
+          <ZATERDAG>10:00-18:00</ZATERDAG>
+          <ZONDAG>10:00-18:00</ZONDAG>
         </DAGEN>
       </VERKOOP>
     </OPENINGSTIJDEN>
@@ -94,8 +94,8 @@
 
     <FACILITEITEN>
       <POMPEN SOORT="BEZINE, DIESEL, GAS">
+        <POMP>Diesel</POMP>
         <POMP>Benzine</POMP>
-        <POMP></POMP>
       </POMPEN>
       <WASSEN SOORT="BOX, WASSTRAAT">
         <AUTOWAS>Box</AUTOWAS>
