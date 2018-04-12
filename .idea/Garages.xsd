@@ -1,6 +1,218 @@
-<?xml version="1.0"?>
-<xs:schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
-  <xs:element name="GARAGES">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="FOTOS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FOTO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FOTO_LINK">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="(.)+\.(gif|jpg|jpeg|bmp)"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element type="xs:string" name="FOTO_ALT"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
 
   </xs:element>
+  <xs:element name="GARAGES">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="GARAGE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ADRES">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="STRAAT"/>
+                    <xs:element type="xs:byte" name="STRAATNR"/>
+                    <xs:element name="POSTCODE">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern
+                                  value="\d{4}\s?\w{2}"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="PROVINCIE">
+                            <xs:simpleType>
+                              <xs:restriction base ="xs:string">
+                                <xs:pattern value="Drenthe|Groningen|Overijsel|Friesland|Zeeland|Noord-Holland|Zuid-Holland|Limburg|Gelderland|Noord-Brabant|Utrecht|Flevoland"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="EMAIL">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+              </xs:element>
+              <xs:element name="WEBSITE">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="[hH][tT]{2}[pP]://[wW]{3}.*"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+              </xs:element>
+
+              <xs:element type="xs:string" name="OMSCHRIJVING"/>
+              <xs:element type="xs:string" name="ROUTEBESCHRIJVING"/>
+              <xs:element ref="FOTOS"/>
+
+              <xs:element name="OPENINGSTIJDEN">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="WERKPLAATS">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="DAGEN">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="MAANDAG"/>
+                                <xs:element type="xs:string" name="DINSDAG"/>
+                                <xs:element type="xs:string" name="WOENSDAG"/>
+                                <xs:element type="xs:string" name="DONDERDAG"/>
+                                <xs:element type="xs:string" name="VRIJDAG"/>
+                                <xs:element type="xs:string" name="ZATERDAG"/>
+                                <xs:element type="xs:string" name="ZONDAG"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="VERKOOP">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="DAGEN">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="MAANDAG"/>
+                                <xs:element type="xs:string" name="DINSDAG"/>
+                                <xs:element type="xs:string" name="WOENSDAG"/>
+                                <xs:element type="xs:string" name="DONDERDAG"/>
+                                <xs:element type="xs:string" name="VRIJDAG"/>
+                                <xs:element type="xs:string" name="ZATERDAG"/>
+                                <xs:element type="xs:string" name="ZONDAG"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="BOVAG" minOccurs="0" maxOccurs="1"/>
+              <xs:element type="xs:string" name="AUTOLENEN" minOccurs="0" maxOccurs="1"/>
+              <xs:element type="xs:string" name="AUTOHUREN" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="MEDEWERKERS">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="MEDEWERKER">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="MEDEWERKER_NAAM"/>
+                          <xs:element ref="FOTOS"/>
+                          <xs:element type="xs:string" name="MEDEWERKER_FUNCTIE"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DEALER">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="MERK"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="MERKEN"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="WERKPLAATSEN">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="ONDERHOUD" minOccurs="0" maxOccurs="1"/>
+                    <xs:element type="xs:string" name="APK" minOccurs="0" maxOccurs="1"/>
+                    <xs:element type="xs:string" name="SCHADEHERSTEL" minOccurs="0" maxOccurs="1"/>
+                    <xs:element type="xs:string" name="RUITENREPARATIE" minOccurs="0" maxOccurs="1"/>
+                    <xs:element type="xs:string" name="AIRCOSERVICE" minOccurs="0" maxOccurs="1"/>
+                    <xs:element type="xs:string" name="BANDENSERVICE" minOccurs="0" maxOccurs="1"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="OCCASIONS">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OCCASION">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="KENTEKEN"/>
+                          <xs:element type="xs:string" name="OCCASION_MERK"/>
+                          <xs:element type="xs:string" name="TYPE"/>
+                          <xs:element type="xs:short" name="BOUWJAAR"/>
+                          <xs:element name="PRIJS">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:short">
+                                  <xs:attribute type="xs:string" name="VALUTA"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="BRANDSTOF"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FACILITEITEN">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="POMPEN">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="POMP" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="SOORT"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="WASSEN">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="AUTOWAS"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="SOORT"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="WINKEL">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="LEVENSMIDDELEN"/>
+                          <xs:element type="xs:string" name="ROOKWAAR"/>
+                          <xs:element type="xs:string" name="TIJDSCHRIFTEN"/>
+                          <xs:element type="xs:string" name="AUTO-ACCESSOIRES"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
 </xs:schema>

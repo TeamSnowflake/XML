@@ -4,25 +4,25 @@
 <!-- Informatica Beheer -->
 <!-- versie 1.0 -->
 
-<!DOCTYPE GARAGES SYSTEM "Garages.dtd">
-<GARAGES>
+
+<GARAGES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Garages.xsd">
   <GARAGE>
     <ADRES>
       <STRAAT>stendenstraat</STRAAT>
       <STRAATNR>14</STRAATNR>
-      <POSTCODE>773TP</POSTCODE>
-      <PROVINCIE>Friesland</PROVINCIE>
+      <POSTCODE>7733TP</POSTCODE>
+      <PROVINCIE>Drenthe</PROVINCIE>
     </ADRES>
 
-    <EMAIL>garage@mail.nl</EMAIL>
-    <WEBSITE>WOEFJ</WEBSITE>
+    <EMAIL>garage@mail.com</EMAIL>
+    <WEBSITE>HTTP://www.google.com</WEBSITE>
     <OMSCHRIJVING>HELE MOOIE GARAGE</OMSCHRIJVING>
-    <ROUTEBESCHRIJVING>LINKS LINKS RECHTS</ROUTEBESCHRIJVING>
+    <ROUTEBESCHRIJVING>https://www.google.nl/maps/place/Autobedrijf+van+Kampen/@53.222211,6.527775,13z/data=!4m8!1m2!2m1!1sgarage!3m4!1s0x47c9cd43b3bed2d3:0xc86af24fbc560c39!8m2!3d53.2289686!4d6.5598917</ROUTEBESCHRIJVING>
 
     <FOTOS>
       <FOTO>
-        <FOTO_LINK>FOTO.JPG</FOTO_LINK>
-        <FOTO_ALT>ALT.JPG</FOTO_ALT>
+        <FOTO_LINK>FOTO.jpg</FOTO_LINK>
+        <FOTO_ALT>garagefoto</FOTO_ALT>
       </FOTO>
     </FOTOS>
 
@@ -60,7 +60,7 @@
         <MEDEWERKER_NAAM>Pieter</MEDEWERKER_NAAM>
         <FOTOS>
           <FOTO>
-            <FOTO_LINK>MEDEWERKER.JPG</FOTO_LINK>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
             <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
           </FOTO>
         </FOTOS>
@@ -94,8 +94,8 @@
 
     <FACILITEITEN>
       <POMPEN SOORT="BEZINE, DIESEL, GAS">
-      <POMP>Benzine</POMP>
-      <POMP></POMP>
+        <POMP>Benzine</POMP>
+        <POMP></POMP>
       </POMPEN>
       <WASSEN SOORT="BOX, WASSTRAAT">
         <AUTOWAS>Box</AUTOWAS>
