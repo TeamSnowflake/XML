@@ -49,6 +49,7 @@
               <xs:element name="ADRES">
                 <xs:complexType>
                   <xs:sequence>
+				  <xs:element type="xs:string" name="GARAGENAAM"/>
                     <xs:element type="xs:string" name="STRAAT"/>
                     <xs:element type="xs:byte" name="STRAATNR"/>
                     <xs:element name="POSTCODE">
@@ -114,7 +115,7 @@
               <xs:element name="MEDEWERKERS">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="MEDEWERKER">
+                    <xs:element name="MEDEWERKER" maxOccurs="unbounded">
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element type="xs:string" name="MEDEWERKER_NAAM"/>
@@ -129,7 +130,7 @@
               <xs:element name="DEALER">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="MERK">
+                    <xs:element name="MERK" maxOccurs="unbounded">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
                           <xs:pattern value="Mercedes|Audi|BMW|Tesla|Fiat|Ferrari"/>
