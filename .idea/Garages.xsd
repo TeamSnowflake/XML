@@ -43,7 +43,7 @@
   <xs:element name="GARAGES">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="GARAGE">
+        <xs:element name="GARAGE" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ADRES">
@@ -51,7 +51,7 @@
                   <xs:sequence>
 				  <xs:element type="xs:string" name="GARAGENAAM"/>
                     <xs:element type="xs:string" name="STRAAT"/>
-                    <xs:element type="xs:byte" name="STRAATNR"/>
+                    <xs:element type="xs:string" name="STRAATNR"/>
                     <xs:element name="POSTCODE">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
@@ -73,7 +73,6 @@
               <xs:element name="EMAIL">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
-                          <xs:pattern value="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"/>
                         </xs:restriction>
                       </xs:simpleType>
               </xs:element>
@@ -133,7 +132,7 @@
                     <xs:element name="MERK" maxOccurs="unbounded">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
-                          <xs:pattern value="Mercedes|Audi|BMW|Tesla|Fiat|Ferrari"/>
+                          <xs:pattern value="Mercedes|Audi|Toyota|BMW|Tesla|Fiat|Ferrari"/>
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
@@ -156,13 +155,21 @@
               <xs:element name="OCCASIONS">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="OCCASION">
+                    <xs:element name="OCCASION" maxOccurs="unbounded">
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="KENTEKEN">
                             <xs:simpleType>
                               <xs:restriction base="xs:string">
                                 <xs:pattern value="\d{2}-\w{2}-\w{2}"/>
+								<xs:pattern value="\w{2}-\d{2}-\w{2}"/>
+								<xs:pattern value="\w{2}-\w{2}-\d{2}"/>
+								<xs:pattern value="\w{2}-\d{3}-\w{1}"/>
+								<xs:pattern value="\w{1}-\d{3}-\w{2}"/>
+								<xs:pattern value="\w{3}-\w{1}-\w{2}"/>
+								<xs:pattern value="\w{3}-\w{2}-\w{1}"/>
+								<xs:pattern value="\w{1}-\w{2}-\d{3}"/>
+								<xs:pattern value="\w{2}-\w{1}-\d{3}"/>
                               </xs:restriction>
                             </xs:simpleType>
                           </xs:element>
@@ -178,7 +185,7 @@
                           <xs:element name="PRIJS">
                             <xs:complexType>
                               <xs:simpleContent>
-                                <xs:extension base="xs:short">
+                                <xs:extension base="xs:long">
                                   <xs:attribute type="xs:string" name="VALUTA"/>
                                 </xs:extension>
                               </xs:simpleContent>
@@ -211,7 +218,7 @@
                     <xs:element name="WASSEN">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="AUTOWAS">
+                          <xs:element name="AUTOWAS" maxOccurs="unbounded">
                                   <xs:simpleType>
                                     <xs:restriction base="xs:string">
                                       <xs:pattern value="Box|Wasstraat"/>

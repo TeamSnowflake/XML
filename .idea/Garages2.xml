@@ -120,4 +120,952 @@
       </WINKEL>
     </FACILITEITEN>
   </GARAGE>
+  
+  
+  
+ 
+    <GARAGE>
+    <ADRES>
+		<GARAGENAAM>Garage WoT</GARAGENAAM>
+		<STRAAT>WargaStraat</STRAAT>
+		<STRAATNR>4005</STRAATNR>
+		<POSTCODE>2071FV</POSTCODE>
+		<PROVINCIE>Groningen</PROVINCIE>
+    </ADRES>
+
+    <EMAIL>WoTnoF@wot.nl</EMAIL>
+    <WEBSITE>HTTP://www.wargaming.net</WEBSITE>
+    <OMSCHRIJVING>Tanks</OMSCHRIJVING> 
+    <ROUTEBESCHRIJVING>2de afrit A37</ROUTEBESCHRIJVING>
+
+    <FOTOS>
+      <FOTO>
+        <FOTO_LINK>FOTO.jpg</FOTO_LINK>
+        <FOTO_ALT>garagefoto</FOTO_ALT>
+      </FOTO>
+    </FOTOS>
+
+    <OPENINGSTIJDEN>
+      <WERKPLAATS>
+        <DAGEN>
+          <MAANDAG>09:00-17:00</MAANDAG>
+          <DINSDAG>09:00-17:00</DINSDAG>
+          <WOENSDAG>09:00-17:00</WOENSDAG>
+          <DONDERDAG>10:00-17:00</DONDERDAG>
+          <VRIJDAG>10:00-17:00</VRIJDAG>
+          <ZATERDAG>10:00-17:00</ZATERDAG>
+          <ZONDAG>10:00-17:00</ZONDAG>
+        </DAGEN>
+      </WERKPLAATS>
+      <VERKOOP>
+        <DAGEN>
+          <MAANDAG>10:00-15:00</MAANDAG>
+          <DINSDAG>10:00-15:00</DINSDAG>
+          <WOENSDAG>10:00-15:00</WOENSDAG>
+          <DONDERDAG>10:00-15:00</DONDERDAG>
+          <VRIJDAG>10:00-15:00</VRIJDAG>
+          <ZATERDAG>10:00-18:00</ZATERDAG>
+          <ZONDAG>10:00-18:00</ZONDAG>
+        </DAGEN>
+      </VERKOOP>
+    </OPENINGSTIJDEN>
+
+    <BOVAG />
+    <AUTOLENEN />
+    <AUTOHUREN></AUTOHUREN>
+
+    <MEDEWERKERS>
+      <MEDEWERKER>
+        <MEDEWERKER_NAAM>Zorak</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+	  <MEDEWERKER>
+        <MEDEWERKER_NAAM>Jan</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>AssistentManager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+    </MEDEWERKERS>
+
+    <DEALER MERKEN="MERCEDES, AUDI, BMW, TESLA, TOYOTA, FIAT, FERRARI">
+      <MERK>Tesla</MERK>
+      <MERK>Toyota</MERK>
+      <MERK>Ferrari</MERK>
+    </DEALER>
+
+    <WERKPLAATSEN>
+      <ONDERHOUD/>
+      <APK/>
+      <SCHADEHERSTEL/>
+      <RUITENREPARATIE/>
+      <AIRCOSERVICE/>
+      <BANDENSERVICE/>
+    </WERKPLAATSEN>
+
+    <OCCASIONS>
+      <OCCASION BRANDSTOF="GAS">
+        <KENTEKEN>H-666-HH</KENTEKEN>
+        <OCCASION_MERK>Tesla</OCCASION_MERK>
+        <TYPE>Sedan</TYPE>
+        <BOUWJAAR>2018</BOUWJAAR>
+        <PRIJS VALUTA="EURO">200000</PRIJS>
+      </OCCASION>
+	  <OCCASION BRANDSTOF="BENZINE">
+        <KENTEKEN>T-333-TT</KENTEKEN>
+        <OCCASION_MERK>Tesla</OCCASION_MERK>
+        <TYPE>SUV</TYPE>
+        <BOUWJAAR>2011</BOUWJAAR>
+        <PRIJS VALUTA="EURO">240000</PRIJS>
+      </OCCASION>
+    </OCCASIONS>
+
+
+    <FACILITEITEN>
+      <POMPEN SOORT="BEZINE, DIESEL, GAS">
+        <POMP>Diesel</POMP>
+        <POMP>Diesel</POMP>
+        <POMP>Benzine</POMP>
+        <POMP>Gas</POMP>
+      </POMPEN>
+      <WASSEN SOORT="BOX, WASSTRAAT">
+        <AUTOWAS>Box</AUTOWAS>
+        <AUTOWAS>Box</AUTOWAS>
+        <AUTOWAS>Wasstraat</AUTOWAS>
+      </WASSEN>
+      <WINKEL>
+        <LEVENSMIDDELEN/>
+        <ROOKWAAR />
+        <TIJDSCHRIFTEN/>
+        <AUTO-ACCESSOIRES/>
+      </WINKEL>
+    </FACILITEITEN>
+  </GARAGE>
+  
+  
+  
+    <GARAGE>
+    <ADRES>
+		<GARAGENAAM>Garage Tepino</GARAGENAAM>
+		<STRAAT>TeflinaStraat</STRAAT>
+		<STRAATNR>123</STRAATNR>
+		<POSTCODE>7093TP</POSTCODE>
+		<PROVINCIE>Noord-Holland</PROVINCIE>
+    </ADRES>
+
+    <EMAIL>Tepino@gmail.com</EMAIL>
+    <WEBSITE>HTTP://www.tepino.com</WEBSITE>
+    <OMSCHRIJVING>Tepino Italia Car</OMSCHRIJVING>
+    <ROUTEBESCHRIJVING>5de aftit E223</ROUTEBESCHRIJVING>
+
+    <FOTOS>
+      <FOTO>
+        <FOTO_LINK>FOTO.jpg</FOTO_LINK>
+        <FOTO_ALT>garagefoto</FOTO_ALT>
+      </FOTO>
+    </FOTOS>
+
+    <OPENINGSTIJDEN>
+      <WERKPLAATS>
+        <DAGEN>
+          <MAANDAG>08:00-13:00</MAANDAG>
+          <DINSDAG>08:00-13:00</DINSDAG>
+          <WOENSDAG>08:00-13:00</WOENSDAG>
+          <DONDERDAG>08:00-13:00</DONDERDAG>
+          <VRIJDAG>08:00-13:00</VRIJDAG>
+          <ZATERDAG>08:00-13:00</ZATERDAG>
+          <ZONDAG>08:00-13:00</ZONDAG>
+        </DAGEN>
+      </WERKPLAATS>
+      <VERKOOP>
+        <DAGEN>
+          <MAANDAG>08:00-13:00</MAANDAG>
+          <DINSDAG>08:00-13:00</DINSDAG>
+          <WOENSDAG>08:00-13:00</WOENSDAG>
+          <DONDERDAG>08:00-13:00</DONDERDAG>
+          <VRIJDAG>08:00-13:00</VRIJDAG>
+          <ZATERDAG>08:00-13:00</ZATERDAG>
+          <ZONDAG>08:00-13:00</ZONDAG>
+        </DAGEN>
+      </VERKOOP>
+    </OPENINGSTIJDEN>
+
+    <BOVAG />
+    <AUTOLENEN />
+    <AUTOHUREN></AUTOHUREN>
+
+    <MEDEWERKERS>
+      <MEDEWERKER>
+        <MEDEWERKER_NAAM>Valencia</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+	  <MEDEWERKER>
+        <MEDEWERKER_NAAM>Julius</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+    </MEDEWERKERS>
+
+    <DEALER MERKEN="MERCEDES, AUDI, BMW, TESLA, TOYOTA, FIAT, FERRARI">
+      <MERK>Fiat</MERK>
+      <MERK>Ferrari</MERK>
+    </DEALER>
+
+    <WERKPLAATSEN>
+      <ONDERHOUD/>
+      <APK/>
+      <SCHADEHERSTEL/>
+      <RUITENREPARATIE/>
+      <AIRCOSERVICE/>
+      <BANDENSERVICE/>
+    </WERKPLAATSEN>
+
+    <OCCASIONS>
+      <OCCASION BRANDSTOF="BENZINE">
+        <KENTEKEN>H-981-TT</KENTEKEN>
+        <OCCASION_MERK>Fiat</OCCASION_MERK>
+        <TYPE>hatchback</TYPE>
+        <BOUWJAAR>2016</BOUWJAAR>
+        <PRIJS VALUTA="EURO">20000</PRIJS>
+      </OCCASION>
+    </OCCASIONS>
+
+
+    <FACILITEITEN>
+      <POMPEN SOORT="BEZINE, DIESEL, GAS">
+        <POMP>Diesel</POMP>
+        <POMP>Benzine</POMP>
+      </POMPEN>
+      <WASSEN SOORT="BOX, WASSTRAAT">
+        <AUTOWAS>Box</AUTOWAS>
+      </WASSEN>
+      <WINKEL>
+        <LEVENSMIDDELEN/>
+        <ROOKWAAR />
+        <TIJDSCHRIFTEN/>
+        <AUTO-ACCESSOIRES/>
+      </WINKEL>
+    </FACILITEITEN>
+  </GARAGE>
+  
+  
+  
+    <GARAGE>
+    <ADRES>
+		<GARAGENAAM>Garage Jiun</GARAGENAAM>
+		<STRAAT>Jiunstraat</STRAAT>
+		<STRAATNR>1432</STRAATNR>
+		<POSTCODE>7246TP</POSTCODE>
+		<PROVINCIE>Drenthe</PROVINCIE>
+    </ADRES>
+
+    <EMAIL> kipgarage@gmail.com</EMAIL>
+    <WEBSITE>HTTP://www.google.com</WEBSITE>
+    <OMSCHRIJVING>Dikke BMW</OMSCHRIJVING>
+    <ROUTEBESCHRIJVING>https://www.google.nl/maps/place/Autobedrijf+van+Kampen/@53.222211,6.527775,13z/data=!4m8!1m2!2m1!1sgarage!3m4!1s0x47c9cd43b3bed2d3:0xc86af24fbc560c39!8m2!3d53.2289686!4d6.5598917</ROUTEBESCHRIJVING>
+
+    <FOTOS>
+      <FOTO>
+        <FOTO_LINK>FOTO.jpg</FOTO_LINK>
+        <FOTO_ALT>garagefoto</FOTO_ALT>
+      </FOTO>
+    </FOTOS>
+
+    <OPENINGSTIJDEN>
+      <WERKPLAATS>
+        <DAGEN>
+          <MAANDAG>10:00-21:00</MAANDAG>
+          <DINSDAG>10:00-21:00</DINSDAG>
+          <WOENSDAG>10:00-21:00</WOENSDAG>
+          <DONDERDAG>10:00-21:00</DONDERDAG>
+          <VRIJDAG>10:00-21:00</VRIJDAG>
+          <ZATERDAG>10:00-21:00</ZATERDAG>
+          <ZONDAG>10:00-21:00</ZONDAG>
+        </DAGEN>
+      </WERKPLAATS>
+      <VERKOOP>
+        <DAGEN>
+          <MAANDAG>10:00-21:00</MAANDAG>
+          <DINSDAG>10:00-21:00</DINSDAG>
+          <WOENSDAG>10:00-21:00</WOENSDAG>
+          <DONDERDAG>10:00-21:00</DONDERDAG>
+          <VRIJDAG>10:00-19:00</VRIJDAG>
+          <ZATERDAG>10:00-21:00</ZATERDAG>
+          <ZONDAG>10:00-21:00</ZONDAG>
+        </DAGEN>
+      </VERKOOP>
+    </OPENINGSTIJDEN>
+
+    <BOVAG />
+    <AUTOLENEN />
+    <AUTOHUREN></AUTOHUREN>
+
+    <MEDEWERKERS>
+      <MEDEWERKER>
+        <MEDEWERKER_NAAM>Kip</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+	  <MEDEWERKER>
+        <MEDEWERKER_NAAM>Kim Jong Un</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+    </MEDEWERKERS>
+
+    <DEALER MERKEN="MERCEDES, AUDI, BMW, TESLA, TOYOTA, FIAT, FERRARI">
+      <MERK>BMW</MERK>
+    </DEALER>
+
+    <WERKPLAATSEN>
+      <ONDERHOUD/>
+      <APK/>
+      <SCHADEHERSTEL/>
+      <RUITENREPARATIE/>
+      <AIRCOSERVICE/>
+      <BANDENSERVICE/>
+    </WERKPLAATSEN>
+
+    <OCCASIONS>
+      <OCCASION BRANDSTOF="DIESEL">
+        <KENTEKEN>66-TH-NM</KENTEKEN>
+        <OCCASION_MERK>BWM</OCCASION_MERK>
+        <TYPE>hatchback</TYPE>
+        <BOUWJAAR>1997</BOUWJAAR>
+        <PRIJS VALUTA="EURO">3599</PRIJS>
+      </OCCASION>
+    </OCCASIONS>
+
+
+    <FACILITEITEN>
+      <POMPEN SOORT="BEZINE, DIESEL, GAS">
+        <POMP>Diesel</POMP>
+      </POMPEN>
+      <WASSEN SOORT="BOX, WASSTRAAT">
+        <AUTOWAS>Wasstraat</AUTOWAS>
+      </WASSEN>
+      <WINKEL>
+        <LEVENSMIDDELEN/>
+        <ROOKWAAR />
+        <TIJDSCHRIFTEN/>
+        <AUTO-ACCESSOIRES/>
+      </WINKEL>
+    </FACILITEITEN>
+  </GARAGE>
+  
+  
+  
+    <GARAGE>
+    <ADRES>
+		<GARAGENAAM>Garage Ting Jong Ting Jong</GARAGENAAM>
+		<STRAAT>ChinaStraat</STRAAT>
+		<STRAATNR>745B</STRAATNR>
+		<POSTCODE>8891IK</POSTCODE>
+		<PROVINCIE>Limburg</PROVINCIE>
+    </ADRES>
+
+    <EMAIL>tingjong@hotmail.com</EMAIL>
+    <WEBSITE>HTTP://www.google.com</WEBSITE>
+    <OMSCHRIJVING>Nihao Kai-lan</OMSCHRIJVING>
+    <ROUTEBESCHRIJVING>https://www.google.nl/maps/place/Autobedrijf+van+Kampen/@53.222211,6.527775,13z/data=!4m8!1m2!2m1!1sgarage!3m4!1s0x47c9cd43b3bed2d3:0xc86af24fbc560c39!8m2!3d53.2289686!4d6.5598917</ROUTEBESCHRIJVING>
+
+    <FOTOS>
+      <FOTO>
+        <FOTO_LINK>FOTO.jpg</FOTO_LINK>
+        <FOTO_ALT>garagefoto</FOTO_ALT>
+      </FOTO>
+    </FOTOS>
+
+    <OPENINGSTIJDEN>
+      <WERKPLAATS>
+        <DAGEN>
+          <MAANDAG>04:00-13:00</MAANDAG>
+          <DINSDAG>10:00-15:00</DINSDAG>
+          <WOENSDAG>04:00-15:00</WOENSDAG>
+          <DONDERDAG>10:00-15:00</DONDERDAG>
+          <VRIJDAG>04:00-16:00</VRIJDAG>
+          <ZATERDAG>10:00-15:00</ZATERDAG>
+          <ZONDAG>04:00-15:00</ZONDAG>
+        </DAGEN>
+      </WERKPLAATS>
+      <VERKOOP>
+        <DAGEN>
+          <MAANDAG>10:00-12:00</MAANDAG>
+          <DINSDAG>04:00-16:00</DINSDAG>
+          <WOENSDAG>10:00-18:00</WOENSDAG>
+          <DONDERDAG>04:00-18:00</DONDERDAG>
+          <VRIJDAG>10:00-04:00</VRIJDAG>
+          <ZATERDAG>10:00-18:00</ZATERDAG>
+          <ZONDAG>10:00-04:00</ZONDAG>
+        </DAGEN>
+      </VERKOOP>
+    </OPENINGSTIJDEN>
+
+    <BOVAG />
+    <AUTOLENEN />
+    <AUTOHUREN></AUTOHUREN>
+
+    <MEDEWERKERS>
+      <MEDEWERKER>
+        <MEDEWERKER_NAAM>Shao Lin</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+	  <MEDEWERKER>
+        <MEDEWERKER_NAAM>Mao Zedong</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+    </MEDEWERKERS>
+
+    <DEALER MERKEN="MERCEDES, AUDI, BMW, TESLA, TOYOTA, FIAT, FERRARI">
+      <MERK>Toyota</MERK>
+    </DEALER>
+
+    <WERKPLAATSEN>
+      <ONDERHOUD/>
+      <APK/>
+      <SCHADEHERSTEL/>
+      <RUITENREPARATIE/>
+      <AIRCOSERVICE/>
+      <BANDENSERVICE/>
+    </WERKPLAATSEN>
+
+    <OCCASIONS>
+      <OCCASION BRANDSTOF="BENZINE">
+        <KENTEKEN>97-BB-NM</KENTEKEN>
+        <OCCASION_MERK>Toyota</OCCASION_MERK>
+        <TYPE>Sedan</TYPE>
+        <BOUWJAAR>1984</BOUWJAAR>
+        <PRIJS VALUTA="EURO">1000</PRIJS>
+      </OCCASION>
+    </OCCASIONS>
+
+
+    <FACILITEITEN>
+      <POMPEN SOORT="BEZINE, DIESEL, GAS">
+        <POMP>Benzine</POMP>
+      </POMPEN>
+      <WASSEN SOORT="BOX, WASSTRAAT">
+        <AUTOWAS>Box</AUTOWAS>
+      </WASSEN>
+      <WINKEL>
+        <LEVENSMIDDELEN/>
+        <ROOKWAAR />
+        <TIJDSCHRIFTEN/>
+        <AUTO-ACCESSOIRES/>
+      </WINKEL>
+    </FACILITEITEN>
+  </GARAGE>
+  
+  
+  <GARAGE>
+    <ADRES>
+		<GARAGENAAM>Garage Duinkerken</GARAGENAAM>
+		<STRAAT>Koningweg</STRAAT>
+		<STRAATNR>77</STRAATNR>
+		<POSTCODE>7753TP</POSTCODE>
+		<PROVINCIE>Drenthe</PROVINCIE>
+    </ADRES>
+
+    <EMAIL>garageDuinkerken@gmail.com</EMAIL>
+    <WEBSITE>HTTP://www.google.com/</WEBSITE>
+    <OMSCHRIJVING>Dikke garage Jonguh</OMSCHRIJVING>
+    <ROUTEBESCHRIJVING>https://www.google.nl/maps/place/Autobedrijf+van+Kampen/@53.222211,6.527775,13z/data=!4m8!1m2!2m1!1sgarage!3m4!1s0x47c9cd43b3bed2d3:0xc86af24fbc560c39!8m2!3d53.2289686!4d6.5598917</ROUTEBESCHRIJVING>
+
+    <FOTOS>
+      <FOTO>
+        <FOTO_LINK>FOTO.jpg</FOTO_LINK>
+        <FOTO_ALT>garagefoto</FOTO_ALT>
+      </FOTO>
+    </FOTOS>
+
+    <OPENINGSTIJDEN>
+      <WERKPLAATS>
+        <DAGEN>
+          <MAANDAG>10:00-17:00</MAANDAG>
+          <DINSDAG>10:00-17:00</DINSDAG>
+          <WOENSDAG>10:00-17:00</WOENSDAG>
+          <DONDERDAG>10:00-17:00</DONDERDAG>
+          <VRIJDAG>10:00-17:00</VRIJDAG>
+          <ZATERDAG>10:00-17:00</ZATERDAG>
+          <ZONDAG>10:00-17:00</ZONDAG>
+        </DAGEN>
+      </WERKPLAATS>
+      <VERKOOP>
+        <DAGEN>
+          <MAANDAG>10:00-12:00</MAANDAG>
+          <DINSDAG>10:00-16:00</DINSDAG>
+          <WOENSDAG>10:00-18:00</WOENSDAG>
+          <DONDERDAG>10:00-18:00</DONDERDAG>
+          <VRIJDAG>10:00-18:00</VRIJDAG>
+          <ZATERDAG>10:00-18:00</ZATERDAG>
+          <ZONDAG>10:00-18:00</ZONDAG>
+        </DAGEN>
+      </VERKOOP>
+    </OPENINGSTIJDEN>
+
+    <BOVAG />
+    <AUTOLENEN />
+    <AUTOHUREN>JA</AUTOHUREN>
+
+    <MEDEWERKERS>
+      <MEDEWERKER>
+        <MEDEWERKER_NAAM>Joopie</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Bandenjongen</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+	  <MEDEWERKER>
+        <MEDEWERKER_NAAM>OEPOE</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+    </MEDEWERKERS>
+
+    <DEALER MERKEN="MERCEDES, AUDI, BMW, TESLA, TOYOTA, FIAT, FERRARI">
+      <MERK>BMW</MERK>
+      <MERK>Audi</MERK>
+      <MERK>Mercedes</MERK>
+    </DEALER>
+
+    <WERKPLAATSEN>
+      <ONDERHOUD/>
+      <APK/>
+      <SCHADEHERSTEL/>
+      <RUITENREPARATIE/>
+      <AIRCOSERVICE/>
+      <BANDENSERVICE/>
+    </WERKPLAATSEN>
+
+    <OCCASIONS>
+      <OCCASION BRANDSTOF="DIESEL">
+        <KENTEKEN>67-FL-TR</KENTEKEN>
+        <OCCASION_MERK>MERCEDES</OCCASION_MERK>
+        <TYPE>SLOEP</TYPE>
+        <BOUWJAAR>1980</BOUWJAAR>
+        <PRIJS VALUTA="EURO">20000</PRIJS>
+      </OCCASION>
+    </OCCASIONS>
+
+
+    <FACILITEITEN>
+      <POMPEN SOORT="BEZINE, DIESEL, GAS">
+        <POMP>Diesel</POMP>
+        <POMP>Benzine</POMP>
+      </POMPEN>
+      <WASSEN SOORT="BOX, WASSTRAAT">
+        <AUTOWAS>Wasstraat</AUTOWAS>
+      </WASSEN>
+      <WINKEL>
+        <LEVENSMIDDELEN/>
+        <ROOKWAAR />
+        <TIJDSCHRIFTEN/>
+        <AUTO-ACCESSOIRES/>
+      </WINKEL>
+    </FACILITEITEN>
+  </GARAGE>
+  
+  
+  
+  <GARAGE>
+    <ADRES>
+		<GARAGENAAM>Garage Op de Fietse</GARAGENAAM>
+		<STRAAT>Prinshendrikstraat</STRAAT>
+		<STRAATNR>89</STRAATNR>
+		<POSTCODE>7753TP</POSTCODE>
+		<PROVINCIE>Drenthe</PROVINCIE>
+    </ADRES>
+
+    <EMAIL>garageopdefietse@mail.com</EMAIL>
+    <WEBSITE>HTTP://www.google.com</WEBSITE>
+    <OMSCHRIJVING>IE KUNT OOK FIETSEN!</OMSCHRIJVING>
+    <ROUTEBESCHRIJVING>https://www.google.nl/maps/place/Autobedrijf+van+Kampen/@53.222211,6.527775,13z/data=!4m8!1m2!2m1!1sgarage!3m4!1s0x47c9cd43b3bed2d3:0xc86af24fbc560c39!8m2!3d53.2289686!4d6.5598917</ROUTEBESCHRIJVING>
+
+    <FOTOS>
+      <FOTO>
+        <FOTO_LINK>FOTO.jpg</FOTO_LINK>
+        <FOTO_ALT>garagefoto</FOTO_ALT>
+      </FOTO>
+    </FOTOS>
+
+    <OPENINGSTIJDEN>
+      <WERKPLAATS>
+        <DAGEN>
+          <MAANDAG>10:00-11:00</MAANDAG>
+          <DINSDAG>10:00-11:00</DINSDAG>
+          <WOENSDAG>10:00-11:00</WOENSDAG>
+          <DONDERDAG>10:00-11:00</DONDERDAG>
+          <VRIJDAG>10:00-11:00</VRIJDAG>
+          <ZATERDAG>10:00-11:00</ZATERDAG>
+          <ZONDAG>10:00-11:00</ZONDAG>
+        </DAGEN>
+      </WERKPLAATS>
+      <VERKOOP>
+        <DAGEN>
+          <MAANDAG>10:00-14:00</MAANDAG>
+          <DINSDAG>10:00-14:00</DINSDAG>
+          <WOENSDAG>10:00-14:00</WOENSDAG>
+          <DONDERDAG>10:00-14:00</DONDERDAG>
+          <VRIJDAG>10:00-14:00</VRIJDAG>
+          <ZATERDAG>10:00-14:00</ZATERDAG>
+          <ZONDAG>10:00-14:00</ZONDAG>
+        </DAGEN>
+      </VERKOOP>
+    </OPENINGSTIJDEN>
+
+    <BOVAG />
+    <AUTOLENEN />
+    <AUTOHUREN>NEE</AUTOHUREN>
+
+    <MEDEWERKERS>
+      <MEDEWERKER>
+        <MEDEWERKER_NAAM>Henke</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+	  <MEDEWERKER>
+        <MEDEWERKER_NAAM>Gozze</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Luibuis</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+    </MEDEWERKERS>
+
+    <DEALER MERKEN="MERCEDES, AUDI, BMW, TESLA, TOYOTA, FIAT, FERRARI">
+      <MERK>BMW</MERK>
+      <MERK>Audi</MERK>
+      <MERK>Mercedes</MERK>
+    </DEALER>
+
+    <WERKPLAATSEN>
+      <ONDERHOUD/>
+      <APK/>
+      <SCHADEHERSTEL/>
+      <RUITENREPARATIE/>
+      <AIRCOSERVICE/>
+      <BANDENSERVICE/>
+    </WERKPLAATSEN>
+
+    <OCCASIONS>
+      <OCCASION BRANDSTOF="GAS">
+        <KENTEKEN>66-TP-TR</KENTEKEN>
+        <OCCASION_MERK>FERRARI</OCCASION_MERK>
+        <TYPE>Hatchback</TYPE>
+        <BOUWJAAR>2011</BOUWJAAR>
+        <PRIJS VALUTA="EURO">2500</PRIJS>
+      </OCCASION>
+    </OCCASIONS>
+
+
+    <FACILITEITEN>
+      <POMPEN SOORT="BEZINE, DIESEL, GAS">
+        <POMP>Diesel</POMP>
+        <POMP>Benzine</POMP>
+      </POMPEN>
+      <WASSEN SOORT="BOX, WASSTRAAT">
+        <AUTOWAS>Box</AUTOWAS>
+      </WASSEN>
+      <WINKEL>
+        <LEVENSMIDDELEN/>
+        <ROOKWAAR />
+        <TIJDSCHRIFTEN/>
+        <AUTO-ACCESSOIRES/>
+      </WINKEL>
+    </FACILITEITEN>
+  </GARAGE>
+  
+  
+  
+  <GARAGE>
+    <ADRES>
+		<GARAGENAAM>Garage GozzesAutocentrum</GARAGENAAM>
+		<STRAAT>Pierheinlaan</STRAAT>
+		<STRAATNR>66</STRAATNR>
+		<POSTCODE>7733KL</POSTCODE>
+		<PROVINCIE>Drenthe</PROVINCIE>
+    </ADRES>
+
+    <EMAIL>garageGozze@mail.com</EMAIL>
+    <WEBSITE>HTTP://www.google.com</WEBSITE>
+    <OMSCHRIJVING>NOG GLADDE BANDN KOOPN?</OMSCHRIJVING>
+    <ROUTEBESCHRIJVING>https://www.google.nl/maps/place/Autobedrijf+van+Kampen/@53.222211,6.527775,13z/data=!4m8!1m2!2m1!1sgarage!3m4!1s0x47c9cd43b3bed2d3:0xc86af24fbc560c39!8m2!3d53.2289686!4d6.5598917</ROUTEBESCHRIJVING>
+
+    <FOTOS>
+      <FOTO>
+        <FOTO_LINK>FOTO.jpg</FOTO_LINK>
+        <FOTO_ALT>garagefoto</FOTO_ALT>
+      </FOTO>
+    </FOTOS>
+
+    <OPENINGSTIJDEN>
+      <WERKPLAATS>
+        <DAGEN>
+          <MAANDAG>10:00-18:00</MAANDAG>
+          <DINSDAG>10:00-18:00</DINSDAG>
+          <WOENSDAG>10:00-18:00</WOENSDAG>
+          <DONDERDAG>10:00-18:00</DONDERDAG>
+          <VRIJDAG>10:00-18:00</VRIJDAG>
+          <ZATERDAG>10:00-18:00</ZATERDAG>
+          <ZONDAG>10:00-18:00</ZONDAG>
+        </DAGEN>
+      </WERKPLAATS>
+      <VERKOOP>
+        <DAGEN>
+          <MAANDAG>10:00-18:00</MAANDAG>
+          <DINSDAG>10:00-18:00</DINSDAG>
+          <WOENSDAG>10:00-18:00</WOENSDAG>
+          <DONDERDAG>10:00-18:00</DONDERDAG>
+          <VRIJDAG>10:00-18:00</VRIJDAG>
+          <ZATERDAG>10:00-18:00</ZATERDAG>
+          <ZONDAG>10:00-18:00</ZONDAG>
+        </DAGEN>
+      </VERKOOP>
+    </OPENINGSTIJDEN>
+
+    <BOVAG />
+    <AUTOLENEN />
+    <AUTOHUREN>NEE</AUTOHUREN>
+
+    <MEDEWERKERS>
+      <MEDEWERKER>
+        <MEDEWERKER_NAAM>Henkie</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+	  <MEDEWERKER>
+        <MEDEWERKER_NAAM>Gozzie</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Gladde banden verkoper</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+    </MEDEWERKERS>
+
+    <DEALER MERKEN="MERCEDES, AUDI, BMW, TESLA, TOYOTA, FIAT, FERRARI">
+      <MERK>BMW</MERK>
+      <MERK>Audi</MERK>
+      <MERK>Mercedes</MERK>
+    </DEALER>
+
+    <WERKPLAATSEN>
+      <ONDERHOUD/>
+      <APK/>
+      <SCHADEHERSTEL/>
+      <RUITENREPARATIE/>
+      <AIRCOSERVICE/>
+      <BANDENSERVICE/>
+    </WERKPLAATSEN>
+
+    <OCCASIONS>
+      <OCCASION BRANDSTOF="GAS">
+        <KENTEKEN>90-FL-TR</KENTEKEN>
+        <OCCASION_MERK>TOYOTA</OCCASION_MERK>
+        <TYPE>Stationwagon</TYPE>
+        <BOUWJAAR>1998</BOUWJAAR>
+        <PRIJS VALUTA="EURO">3000</PRIJS>
+      </OCCASION>
+    </OCCASIONS>
+
+
+    <FACILITEITEN>
+      <POMPEN SOORT="BEZINE, DIESEL, GAS">
+        <POMP>Diesel</POMP>
+        <POMP>Benzine</POMP>
+      </POMPEN>
+      <WASSEN SOORT="BOX, WASSTRAAT">
+        <AUTOWAS>Box</AUTOWAS>
+      </WASSEN>
+      <WINKEL>
+        <LEVENSMIDDELEN/>
+        <ROOKWAAR />
+        <TIJDSCHRIFTEN/>
+        <AUTO-ACCESSOIRES/>
+      </WINKEL>
+    </FACILITEITEN>
+  </GARAGE>
+  
+  
+  
+  <GARAGE>
+    <ADRES>
+		<GARAGENAAM>Garage Wolters</GARAGENAAM>
+		<STRAAT>Parmentierstraat</STRAAT>
+		<STRAATNR>12</STRAATNR>
+		<POSTCODE>7904TP</POSTCODE>
+		<PROVINCIE>Drenthe</PROVINCIE>
+    </ADRES>
+
+    <EMAIL>garageWolters@mail.com</EMAIL>
+    <WEBSITE>HTTP://www.google.com</WEBSITE>
+    <OMSCHRIJVING>NEE IK BEN GEEN FAMILIE VAN JANNES</OMSCHRIJVING>
+    <ROUTEBESCHRIJVING>https://www.google.nl/maps/place/Autobedrijf+van+Kampen/@53.222211,6.527775,13z/data=!4m8!1m2!2m1!1sgarage!3m4!1s0x47c9cd43b3bed2d3:0xc86af24fbc560c39!8m2!3d53.2289686!4d6.5598917</ROUTEBESCHRIJVING>
+
+    <FOTOS>
+      <FOTO>
+        <FOTO_LINK>FOTO.jpg</FOTO_LINK>
+        <FOTO_ALT>garagefoto</FOTO_ALT>
+      </FOTO>
+    </FOTOS>
+
+    <OPENINGSTIJDEN>
+      <WERKPLAATS>
+        <DAGEN>
+          <MAANDAG>10:00-15:00</MAANDAG>
+          <DINSDAG>10:00-15:00</DINSDAG>
+          <WOENSDAG>10:00-15:00</WOENSDAG>
+          <DONDERDAG>10:00-15:00</DONDERDAG>
+          <VRIJDAG>10:00-15:00</VRIJDAG>
+          <ZATERDAG>10:00-15:00</ZATERDAG>
+          <ZONDAG>10:00-15:00</ZONDAG>
+        </DAGEN>
+      </WERKPLAATS>
+      <VERKOOP>
+        <DAGEN>
+          <MAANDAG>10:00-15:00</MAANDAG>
+          <DINSDAG>10:00-15:00</DINSDAG>
+          <WOENSDAG>10:00-15:00</WOENSDAG>
+          <DONDERDAG>10:00-15:00</DONDERDAG>
+          <VRIJDAG>10:00-15:00</VRIJDAG>
+          <ZATERDAG>10:00-15:00</ZATERDAG>
+          <ZONDAG>10:00-15:00</ZONDAG>
+        </DAGEN>
+      </VERKOOP>
+    </OPENINGSTIJDEN>
+
+    <BOVAG />
+    <AUTOLENEN />
+    <AUTOHUREN>JA</AUTOHUREN>
+
+    <MEDEWERKERS>
+      <MEDEWERKER>
+        <MEDEWERKER_NAAM>Jannes</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Manager</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+	  <MEDEWERKER>
+        <MEDEWERKER_NAAM>Jannes-junior</MEDEWERKER_NAAM>
+        <FOTOS>
+          <FOTO>
+            <FOTO_LINK>MEDEWERKER.jpg</FOTO_LINK>
+            <FOTO_ALT>MEDEWERKERALT.JPG</FOTO_ALT>
+          </FOTO>
+        </FOTOS>
+        <MEDEWERKER_FUNCTIE>Bodyshop</MEDEWERKER_FUNCTIE>
+      </MEDEWERKER>
+    </MEDEWERKERS>
+
+    <DEALER MERKEN="MERCEDES, AUDI, BMW, TESLA, TOYOTA, FIAT, FERRARI">
+      <MERK>Tesla</MERK>
+      <MERK>Fiat</MERK>
+      <MERK>Mercedes</MERK>
+    </DEALER>
+
+    <WERKPLAATSEN>
+      <ONDERHOUD/>
+      <APK/>
+      <SCHADEHERSTEL/>
+      <RUITENREPARATIE/>
+      <AIRCOSERVICE/>
+      <BANDENSERVICE/>
+    </WERKPLAATSEN>
+
+    <OCCASIONS>
+      <OCCASION BRANDSTOF="BENZINE">
+        <KENTEKEN>87-FL-TP</KENTEKEN>
+        <OCCASION_MERK>FIAT</OCCASION_MERK>
+        <TYPE>hatchback</TYPE>
+        <BOUWJAAR>1978</BOUWJAAR>
+        <PRIJS VALUTA="EURO">50</PRIJS>
+      </OCCASION>
+    </OCCASIONS>
+
+
+    <FACILITEITEN>
+      <POMPEN SOORT="BEZINE, DIESEL, GAS">
+        <POMP>Diesel</POMP>
+        <POMP>Benzine</POMP>
+      </POMPEN>
+      <WASSEN SOORT="BOX, WASSTRAAT">
+        <AUTOWAS>Wasstraat</AUTOWAS>
+      </WASSEN>
+      <WINKEL>
+        <LEVENSMIDDELEN/>
+        <ROOKWAAR />
+        <TIJDSCHRIFTEN/>
+        <AUTO-ACCESSOIRES/>
+      </WINKEL>
+    </FACILITEITEN>
+  </GARAGE>
 </GARAGES>
