@@ -132,14 +132,49 @@
 			<br />
 			<div name="dealer" style="text-align:left, width:600px">
               <h2 style="margin-bottom:-5px">DealerShip</h2> 
-              <xsl:for-each select="DEALER">
-				<p><b>Merken: </b>
-				<xsl:value-of select="MERK"/>
+              <p><b>Merken: </b>
+			  <xsl:for-each select="DEALER/MERK">
+				
+				<xsl:value-of select="text()"/>
 				<xsl:if test="position() != last()">
-					<xsl:text>,</xsl:text>
+					<xsl:text>, </xsl:text>
 				</xsl:if>
-				</p>
+				
 			  </xsl:for-each>
+			  </p>
+            </div>
+			<br />
+			<div name="werkplaatsen" style="text-align:left, width:600px">
+              <h2 style="margin-bottom:-5px">Werkplaatsen</h2> 
+            </div>
+			<br />
+			<div name="Occasions" style="text-align:left, width:600px">
+              <h2 style="margin-bottom:-5px">Occasions</h2>
+				<xsl:for-each select="OCCASIONS/OCCASION">
+				<table border="2px">
+					<td>
+					<p><b>Kenteken: </b><xsl:value-of select="KENTEKEN"/></p>
+					<p><b>Merk: </b><xsl:value-of select="OCCASION_MERK"/></p>
+					<p><b>Type: </b><xsl:value-of select="TYPE"/></p>
+					<p><b>Brandstof: </b><xsl:value-of select="@BRANDSTOF"/></p>
+					<p><b>Bouwjaar: </b><xsl:value-of select="BOUWJAAR"/></p>
+					<p><b>Prijs: €</b><xsl:value-of select="PRIJS"/>,-</p>
+					</td>
+				</table>
+				</xsl:for-each>
+            </div>
+			<br />
+			<div name="Faciliteiten" style="text-align:left, width:600px">
+              <h2 style="margin-bottom:-5px">Faciliteiten</h2> 
+				<h3>Pomp(en)</h3>
+				<xsl:for-each select="FACILITEITEN/POMPEN/POMP">
+					<p><b>Pomp: </b><xsl:value-of select="text()"/></p>
+				</xsl:for-each>
+				<h3>Wassen</h3>
+				<xsl:for-each select="FACILITEITEN/WASSEN/AUTOWAS">
+					<p><b>Autowas Soort: </b><xsl:value-of select="text()"/></p>
+				</xsl:for-each>
+				<h3>Winkel</h3>
             </div>
 			<br />
           </xsl:for-each>
