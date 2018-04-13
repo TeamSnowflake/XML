@@ -49,7 +49,11 @@
               <xs:element name="ADRES">
                 <xs:complexType>
                   <xs:sequence>
+<<<<<<< HEAD
 				  <xs:element type="xs:string" name="GARAGENAAM"/>
+=======
+                    <xs:element type="xs:string" name="GARAGENAAM"/>
+>>>>>>> 6d34d4e32d7cd17f71f565b424317e6ca80bdde3
                     <xs:element type="xs:string" name="STRAAT"/>
                     <xs:element type="xs:byte" name="STRAATNR"/>
                     <xs:element name="POSTCODE">
