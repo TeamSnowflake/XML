@@ -8,7 +8,8 @@
 <GARAGES>
   <GARAGE>
     <ADRES>
-      <STRAAT>stendenstraat</STRAAT>
+	  <GARAGENAAM>Garage Testo</GARAGENAAM>
+      <STRAAT>Stendenstraat</STRAAT>
       <STRAATNR>14</STRAATNR>
       <POSTCODE>773TP</POSTCODE>
       <PROVINCIE>Friesland</PROVINCIE>
@@ -51,8 +52,8 @@
       </VERKOOP>
     </OPENINGSTIJDEN>
 
-    <BOVAG />
-    <AUTOLENEN />
+    <BOVAG></BOVAG>
+    <AUTOLENEN></AUTOLENEN>
     <AUTOHUREN></AUTOHUREN>
 
     <MEDEWERKERS>

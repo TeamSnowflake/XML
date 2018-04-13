@@ -7,10 +7,11 @@
 <GARAGES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Garages.xsd">
   <GARAGE>
     <ADRES>
-      <STRAAT>stendenstraat</STRAAT>
-      <STRAATNR>14</STRAATNR>
-      <POSTCODE>7733TP</POSTCODE>
-      <PROVINCIE>Drenthe</PROVINCIE>
+		<GARAGENAAM>Garage Testo</GARAGENAAM>
+		<STRAAT>stendenstraat</STRAAT>
+		<STRAATNR>14</STRAATNR>
+		<POSTCODE>7733TP</POSTCODE>
+		<PROVINCIE>Drenthe</PROVINCIE>
     </ADRES>
 
     <EMAIL>garage@mail.com</EMAIL>
